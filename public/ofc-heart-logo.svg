@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <g id="fig">
+      <circle cx="100" cy="24" r="12.5"/>
+      <!-- comma/swoosh: wide near the head, hooks clockwise and tapers to a point near center; inner notch gives the woven look -->
+      <path d="M100,40
+               C116,40 129,53 128,72
+               C127,86 117,96 104,99
+               C110,89 111,79 104,74
+               C100,71 97,68 98,62
+               C85,66 81,78 88,89
+               C77,82 75,63 86,52
+               C90,45 95,40 100,40 Z"/>
+    </g>
+  </defs>
+  <use href="#fig" fill="#c0413b" transform="rotate(0 100 100)"/>
+  <use href="#fig" fill="#c0413b" transform="rotate(90 100 100)"/>
+  <use href="#fig" fill="#4a5066" transform="rotate(180 100 100)"/>
+  <use href="#fig" fill="#4a5066" transform="rotate(270 100 100)"/>
+  <g transform="translate(90,87.5)" fill="#cd9070"><path d="M10 17 C10 17 3 11.4 3 6.9 C3 4.5 4.8 3 6.8 3 C8.3 3 9.5 4 10 5.2 C10.5 4 11.7 3 13.2 3 C15.2 3 17 4.5 17 6.9 C17 11.4 10 17 10 17 Z"/></g>
+</svg>
