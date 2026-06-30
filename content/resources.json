@@ -2,18 +2,28 @@
   "items": [
     {
       "label": "Centretown Community Health Centre",
-      "url": "#",
+      "url": " https://www.centretownchc.org/",
       "description": "Health and community services supporting seniors in Ottawa."
     },
     {
       "label": "New Horizons for Seniors Program",
-      "url": "#",
+      "url": "https://www.canada.ca/en/employment-social-development/programs/new-horizons-seniors.html",
       "description": "Government of Canada funding and programs for older adults."
     },
     {
       "label": "City of Ottawa Seniors",
-      "url": "#",
+      "url": " https://ottawa.ca/en/recreation-and-parks/drop-activities/senior-centre-drop-ins-membership-and-active-living-club-50/senior-centre-drop-programs-fees-and-descriptions",
       "description": "Local programs, services, and resources for Ottawa seniors."
+    },
+    {
+      "label": "Ottawa Chinese Community Service Centre",
+      "url": "https://occsc.org/",
+      "description": "Serving Newcomers to Canada and providing essential support and resources to help you integrate and thrive in your new communities"
+    },
+    {
+      "label": "Ontario Senior Benefits2026",
+      "url": "https://ageplacehub.ca/blog/government-benefits-seniors-ontario/ ",
+      "description": "Government Benefits for Seniors in Ontario: Every Program You Should Know About in 2026"
     }
   ]
 }
