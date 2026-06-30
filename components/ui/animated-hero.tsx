@@ -2,9 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { Landmark } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ORG, FUNDING, HERO } from "@/lib/content";
+import { ORG, HERO } from "@/lib/content";
 
 export function AnimatedHero() {
   const [index, setIndex] = useState(0);
@@ -73,11 +72,6 @@ export function AnimatedHero() {
             See what we do
           </Button>
         </div>
-
-        <p className="mt-8 flex items-center gap-2 text-sm text-white/80">
-          <Landmark className="size-4 shrink-0" />
-          Supported by the {FUNDING.funder} · {FUNDING.amount} ({FUNDING.term})
-        </p>
       </div>
     </section>
   );

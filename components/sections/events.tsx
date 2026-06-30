@@ -1,8 +1,9 @@
-import { EVENTS, type EventItem } from "@/lib/content";
+import { EVENTS, SECTIONS, type EventItem } from "@/lib/content";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
-import { CalendarDays, Clock, MapPin } from "lucide-react";
+import { CalendarDays, Clock, MapPin, Users } from "lucide-react";
 
 function formatDate(dateStr: string): string {
+  if (dateStr === "") return "Date TBD";
   // Append T00:00:00 to avoid timezone-shift issues when parsing YYYY-MM-DD
   return new Date(`${dateStr}T00:00:00`).toLocaleDateString("en-CA", {
     year: "numeric",
@@ -34,6 +35,27 @@ function EventCard({ event, past }: { event: EventItem; past?: boolean }) {
       <p className="mt-4 leading-relaxed text-muted-foreground">
         {event.description}
       </p>
+      {event.capacity && (
+        <div className="mt-3 inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+          <Users className="size-4 shrink-0 text-primary" />
+          {event.capacity}
+        </div>
+      )}
+      {event.longDescription && (
+        <p className="mt-4 leading-relaxed text-muted-foreground">
+          {event.longDescription}
+        </p>
+      )}
+      {event.speakers && event.speakers.length > 0 && (
+        <div className="mt-4">
+          <p className="text-sm font-semibold text-foreground">Guest speakers</p>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
+            {event.speakers.map((speaker) => (
+              <li key={speaker}>{speaker}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
@@ -48,10 +70,10 @@ export function Events() {
         {/* Header */}
         <ScrollReveal>
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
-            Events
+            {SECTIONS.events.eyebrow}
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-foreground md:text-4xl">
-            What&rsquo;s coming up
+            {SECTIONS.events.heading}
           </h2>
         </ScrollReveal>
 

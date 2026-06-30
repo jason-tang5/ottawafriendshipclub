@@ -1,6 +1,6 @@
 import { GraduationCap, PiggyBank, ShieldCheck, Smartphone, Sprout, Music } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
-import { PROGRAMS } from "@/lib/content";
+import { PROGRAMS, SECTIONS } from "@/lib/content";
 
 const ICONS = { GraduationCap, PiggyBank, ShieldCheck, Smartphone, Sprout, Music } as const;
 
@@ -9,13 +9,12 @@ export function Programs() {
     <section id="programs" className="border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
         <ScrollReveal>
-          <p className="text-sm font-semibold uppercase tracking-wide text-primary">What we do</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-primary">{SECTIONS.programs.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-semibold text-foreground md:text-4xl">
-            Programs for seniors in our community
+            {SECTIONS.programs.heading}
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            From hands-on workshops to weekly social activities, every program is designed to keep
-            older adults healthy, informed, and connected.
+            {SECTIONS.programs.intro}
           </p>
         </ScrollReveal>
 

@@ -1,0 +1,61 @@
+{
+  "org": {
+    "name": "Ottawa Friendship Club",
+    "nameZh": "渥太华联谊会",
+    "tagline": "A community for Ottawa seniors, 55 and over.",
+    "intro": "The Ottawa Friendship Club is a volunteer-run non-profit where older adults meet, move, and learn together — from weekly dance groups to practical workshops on health, money, safety, and technology.",
+    "email": "ottawafriendshipclub@gmail.com",
+    "city": "Ottawa, Ontario"
+  },
+  "about": {
+    "eyebrow": "About the club",
+    "heading": "A place to stay active, informed, and connected",
+    "paragraphs": [
+      "The Ottawa Friendship Club was established on July 9, 2025, through the merger of two community groups: the Middle-aged and Seniors Performing Arts Troupe, which has been actively serving the Chinese community in Canada's capital for more than a decade, and the Ballroom and Latin Dance Group, established in 2024.",
+      "The Club is an inclusive, non-political, and non-religious organization dedicated to reducing social isolation, strengthening community connections, and promoting healthy aging among middle-aged and older adults, particularly those from diverse cultural backgrounds in the Ottawa area.",
+      "Through a broad range of recreational, cultural, educational, and volunteer-led activities, we foster social inclusion, lifelong learning, active living, and community engagement. Our programs support the physical, mental, and social well-being of participants, helping seniors remain active, connected, and independent while enhancing their quality of life.",
+      "Guided by the principle that \"seniors can help seniors,\" we empower older adults to support one another through peer mentoring, volunteer service, cultural exchange, and community participation. By building meaningful relationships and encouraging seniors to take leadership roles in their communities, we create a stronger, more inclusive, and age-friendly society for all.",
+      "The club is currently supported by the Government of Canada through its New Horizons for Seniors Program and the Centretown Community Health Centre, Ottawa."
+    ]
+  },
+  "sections": {
+    "programs": {
+      "eyebrow": "What we do",
+      "heading": "Programs for seniors",
+      "intro": "What the club does for seniors — these are the real, funded activities that keep older adults healthy, informed, and connected."
+    },
+    "groups": {
+      "eyebrow": "Our groups",
+      "heading": "Four groups, meeting every week"
+    },
+    "events": {
+      "eyebrow": "Events",
+      "heading": "What's coming up"
+    },
+    "gallery": {
+      "eyebrow": "Gallery",
+      "heading": "Moments from the club",
+      "intro": "A few snapshots of our members performing, dancing, and spending time together."
+    },
+    "resources": {
+      "eyebrow": "Resources",
+      "heading": "Helpful links for seniors",
+      "intro": "Trusted organizations and programs that support older adults in Ottawa and across Canada."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "heading": "Come join us",
+      "intro": "New members are always welcome. Reach out by email or join our WeChat group to find out about upcoming activities."
+    }
+  },
+  "hero": {
+    "heroImage": "/photos/club-dance-wide.jpg",
+    "rotatingWords": ["welcoming", "active", "connected", "learning", "joyful"]
+  },
+  "groupChat": {
+    "platform": "WeChat",
+    "label": "Join our WeChat group",
+    "note": "Scan the QR code with WeChat to join our members' group chat.",
+    "qrImage": "/wechat-qr.png"
+  }
+}

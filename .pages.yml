@@ -1,0 +1,197 @@
+# Pages CMS configuration — defines the editing forms shown at app.pagescms.org.
+# Docs: https://pagescms.org/docs/configuration/
+#
+# Each "content" entry below maps a friendly form to a JSON file under /content.
+# When an editor saves, Pages CMS commits the JSON change to GitHub, which
+# triggers the GitHub Pages deploy workflow and rebuilds the live site.
+
+# Where uploaded images are stored in the repo, and the URL they map to on the site.
+media:
+  input: public
+  output: /
+  extensions: [png, jpg, jpeg, webp, gif, svg]
+
+content:
+  # ------------------------------------------------------------------ Events
+  - name: events
+    label: Events
+    type: file
+    path: content/events.json
+    fields:
+      - name: items
+        label: Events
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - name: status
+            label: Upcoming or past?
+            type: select
+            options:
+              values: [upcoming, past]
+            default: upcoming
+          - name: date
+            label: Date
+            type: date
+            description: Leave empty to show "Date TBD".
+            options:
+              format: yyyy-MM-dd
+          - { name: time, label: Time, type: string, description: 'e.g. "10:30 AM – 12:00 PM" or "TBD"' }
+          - { name: location, label: Location, type: string }
+          - { name: description, label: Short description, type: text }
+          - { name: longDescription, label: Long description (optional), type: text }
+          - { name: capacity, label: Capacity (optional), type: string }
+          - { name: speakers, label: Guest speakers (optional), type: string, list: true }
+
+  # ------------------------------------------------------------------ Groups
+  - name: groups
+    label: Our groups
+    type: file
+    path: content/groups.json
+    fields:
+      - name: items
+        label: Groups
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Group name, type: string, required: true }
+          - { name: nameZh, label: Chinese name (optional), type: string }
+          - { name: members, label: Members (optional), type: string, description: 'e.g. "35 members"' }
+          - { name: schedule, label: Schedule, type: string, description: 'e.g. "Meets weekly"' }
+          - name: status
+            label: Status
+            type: select
+            options:
+              values: [active, forthcoming]
+            default: active
+          - { name: body, label: Description, type: text }
+
+  # ---------------------------------------------------------------- Programs
+  - name: programs
+    label: What we do (Programs)
+    type: file
+    path: content/programs.json
+    fields:
+      - name: items
+        label: Programs
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: body, label: Description, type: text }
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values: [GraduationCap, PiggyBank, ShieldCheck, Smartphone, Sprout, Music]
+
+  # ----------------------------------------------------------------- Gallery
+  - name: gallery
+    label: Gallery photos
+    type: file
+    path: content/gallery.json
+    fields:
+      - name: items
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - { name: src, label: Photo, type: image, required: true }
+          - { name: caption, label: Caption, type: string }
+
+  # --------------------------------------------------------------- Resources
+  - name: resources
+    label: Resources (links)
+    type: file
+    path: content/resources.json
+    fields:
+      - name: items
+        label: Links
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Link title, type: string, required: true }
+          - { name: url, label: Web address (URL), type: string }
+          - { name: description, label: Description, type: text }
+
+  # ------------------------------------------------ Site text & settings
+  - name: settings
+    label: Site text & settings
+    type: file
+    path: content/settings.json
+    fields:
+      - name: org
+        label: Organization
+        type: object
+        fields:
+          - { name: name, label: Name (English), type: string }
+          - { name: nameZh, label: Name (Chinese), type: string }
+          - { name: tagline, label: Tagline, type: string }
+          - { name: intro, label: Intro paragraph, type: text }
+          - { name: email, label: Contact email, type: string }
+          - { name: city, label: City, type: string }
+      - name: about
+        label: About section
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label above heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: paragraphs, label: Paragraphs, type: text, list: true }
+      - name: hero
+        label: Hero (top banner)
+        type: object
+        fields:
+          - { name: heroImage, label: Background photo, type: image }
+          - { name: rotatingWords, label: Rotating words, type: string, list: true }
+      - name: groupChat
+        label: WeChat panel
+        type: object
+        fields:
+          - { name: platform, label: Platform, type: string }
+          - { name: label, label: Heading, type: string }
+          - { name: note, label: Note, type: text }
+          - { name: qrImage, label: QR code image, type: image }
+      - name: sections
+        label: Section headings
+        type: object
+        fields:
+          - name: programs
+            label: "What we do"
+            type: object
+            fields:
+              - { name: eyebrow, label: Small label, type: string }
+              - { name: heading, label: Heading, type: string }
+              - { name: intro, label: Intro, type: text }
+          - name: groups
+            label: "Our groups"
+            type: object
+            fields:
+              - { name: eyebrow, label: Small label, type: string }
+              - { name: heading, label: Heading, type: string }
+          - name: events
+            label: "Events"
+            type: object
+            fields:
+              - { name: eyebrow, label: Small label, type: string }
+              - { name: heading, label: Heading, type: string }
+          - name: gallery
+            label: "Gallery"
+            type: object
+            fields:
+              - { name: eyebrow, label: Small label, type: string }
+              - { name: heading, label: Heading, type: string }
+              - { name: intro, label: Intro, type: text }
+          - name: resources
+            label: "Resources"
+            type: object
+            fields:
+              - { name: eyebrow, label: Small label, type: string }
+              - { name: heading, label: Heading, type: string }
+              - { name: intro, label: Intro, type: text }
+          - name: contact
+            label: "Contact"
+            type: object
+            fields:
+              - { name: eyebrow, label: Small label, type: string }
+              - { name: heading, label: Heading, type: string }
+              - { name: intro, label: Intro, type: text }

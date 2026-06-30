@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "src": "/photos/gallery/club-photo-1.jpeg",
+      "caption": "The Ottawa Friendship Club together."
+    },
+    {
+      "src": "/photos/club-dance-wide.jpg",
+      "caption": "Members dancing in bright costumes at the Chinatown street festival."
+    },
+    {
+      "src": "/photos/club-dance-street.jpg",
+      "caption": "The dance group performing as the festival crowd looks on."
+    },
+    {
+      "src": "/photos/club-group-arch.jpg",
+      "caption": "Group portrait in front of the Chinatown Royal Arch."
+    },
+    {
+      "src": "/photos/club-dance-circle.jpg",
+      "caption": "Dancers mid-spin in a joyful circle."
+    }
+  ]
+}

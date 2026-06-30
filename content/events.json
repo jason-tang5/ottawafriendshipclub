@@ -1,0 +1,73 @@
+{
+  "items": [
+    {
+      "title": "Gardening Workshop",
+      "date": "2026-06-28",
+      "time": "10:30 AM – 12:00 PM",
+      "location": "129 Oldfield St, Ottawa",
+      "status": "upcoming",
+      "capacity": "Limited to 50 participants (first come, first served)",
+      "speakers": [
+        "Dr. Han Shuyou (Ph.D. in Agriculture) — vegetable gardening, flower cultivation, pest and disease management, and lawn care.",
+        "\"Kai Kai Xin Xin\" – Owner of Happy Garden — years of hands-on home gardening experience and practical tips for a beautiful backyard garden."
+      ],
+      "description": "Free for all members. Would you like to create a thriving vegetable garden and a beautiful flower garden?",
+      "longDescription": "Would you like to create a thriving vegetable garden and a beautiful flower garden? Are you interested in learning how to grow vegetables, cultivate flowers, prevent and control garden pests and diseases, and maintain a lush, healthy lawn? The Ottawa Friendship Club warmly invites you to join our practical and enjoyable Backyard Gardening Workshop. Set in a beautiful private garden, this hands-on event offers an opportunity to learn gardening techniques, exchange growing experiences, and make new friends in a relaxed and welcoming atmosphere."
+    },
+    {
+      "title": "Digital Skills Drop-In",
+      "date": "",
+      "time": "TBD",
+      "location": "TBD",
+      "status": "upcoming",
+      "capacity": "",
+      "speakers": [],
+      "description": "Free for all members.",
+      "longDescription": ""
+    },
+    {
+      "title": "Health & Self-Care Workshop for Seniors",
+      "date": "",
+      "time": "TBD",
+      "location": "TBD",
+      "status": "upcoming",
+      "capacity": "",
+      "speakers": [],
+      "description": "Learn practical skills to manage your health with confidence. Topics include safe medication use, caring for yourself when you are ill, recognizing the warning signs of a heart attack and stroke, and knowing when and how to seek medical help. Free for all members.",
+      "longDescription": ""
+    },
+    {
+      "title": "Elder-Abuse Awareness Session",
+      "date": "",
+      "time": "TBD",
+      "location": "TBD",
+      "status": "upcoming",
+      "capacity": "",
+      "speakers": [],
+      "description": "Free for all members.",
+      "longDescription": ""
+    },
+    {
+      "title": "Financial Safety for Seniors Workshop",
+      "date": "",
+      "time": "TBD",
+      "location": "TBD",
+      "status": "upcoming",
+      "capacity": "",
+      "speakers": [],
+      "description": "Free for all members.",
+      "longDescription": ""
+    },
+    {
+      "title": "Chinatown Night Market Performance",
+      "date": "2026-05-29",
+      "time": "May 29, 2026, 2:00–3:00 PM and May 31, 2026, 6:15–8:30 PM",
+      "location": "Chinatown, Ottawa",
+      "status": "past",
+      "capacity": "",
+      "speakers": [],
+      "description": "For this year's Chinatown Night Market, the Ottawa Friendship Club's Senior Song and Dance Troupe and Ballroom and Latin Dance Team were invited to perform, presenting a vibrant artistic showcase to audiences from diverse cultural backgrounds.",
+      "longDescription": ""
+    }
+  ]
+}

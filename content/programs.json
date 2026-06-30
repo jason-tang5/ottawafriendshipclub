@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "title": "Weekly activity groups",
+      "body": "Two active dance groups, with a third fitness group and a Mahjong group coming soon, offering members more opportunities to stay active, have fun, and build lasting friendships.",
+      "icon": "Music"
+    },
+    {
+      "title": "Educational workshops",
+      "body": "Regular talks and hands-on sessions on staying healthy, active, and connected later in life.",
+      "icon": "GraduationCap"
+    },
+    {
+      "title": "Gardening",
+      "body": "Growing things together outdoors — good for the body, the mind, and making friends.",
+      "icon": "Sprout"
+    },
+    {
+      "title": "Digital skills",
+      "body": "Friendly, patient help with phones, computers, and the internet — at your own pace.",
+      "icon": "Smartphone"
+    },
+    {
+      "title": "Elder-abuse awareness",
+      "body": "Workshops that help seniors recognize, prevent, and report abuse and fraud.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "title": "Financial information for seniors",
+      "body": "Plain-language guidance on pensions, benefits, and managing money safely.",
+      "icon": "PiggyBank"
+    }
+  ]
+}

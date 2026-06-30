@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "name": "Grandparents Dance Group",
+      "nameZh": "",
+      "members": "",
+      "schedule": "Meets weekly",
+      "status": "active",
+      "body": "A welcoming dance group that gets together every week to move, laugh, and stay active."
+    },
+    {
+      "name": "Ballroom & Latin Dance Group",
+      "nameZh": "国标队",
+      "members": "35 members",
+      "schedule": "Meets weekly",
+      "status": "active",
+      "body": "Our ballroom and Latin (cha-cha-cha) dance group with volunteer instructors that practises every week."
+    },
+    {
+      "name": "Fitness Exercise Group",
+      "nameZh": "",
+      "members": "",
+      "schedule": "Weekly (coming soon)",
+      "status": "forthcoming",
+      "body": "The group offers weekly fitness sessions to improve strength, flexibility, and overall well-being."
+    },
+    {
+      "name": "Mahjong Group",
+      "nameZh": "",
+      "members": "",
+      "schedule": "Almost daily (coming soon)",
+      "status": "forthcoming",
+      "body": "A friendly Mahjong group for older seniors to enjoy recreation, social interaction, and companionship almost daily in a welcoming environment."
+    }
+  ]
+}
