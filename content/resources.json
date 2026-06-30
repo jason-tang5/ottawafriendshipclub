@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "label": "Centretown Community Health Centre",
+      "url": "#",
+      "description": "Health and community services supporting seniors in Ottawa."
+    },
+    {
+      "label": "New Horizons for Seniors Program",
+      "url": "#",
+      "description": "Government of Canada funding and programs for older adults."
+    },
+    {
+      "label": "City of Ottawa Seniors",
+      "url": "#",
+      "description": "Local programs, services, and resources for Ottawa seniors."
+    }
+  ]
+}

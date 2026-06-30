@@ -1,11 +1,18 @@
-import { GROUPS, type Group } from "@/lib/content";
+import { GROUPS, SECTIONS, type Group } from "@/lib/content";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { Users, CalendarClock } from "lucide-react";
 
 function GroupCard({ group }: { group: Group }) {
   return (
     <div className="rounded-2xl border border-border bg-card p-8">
-      <h3 className="text-2xl font-semibold text-foreground">{group.name}</h3>
+      <div className="flex flex-wrap items-center gap-3">
+        <h3 className="text-2xl font-semibold text-foreground">{group.name}</h3>
+        {group.status === "forthcoming" && (
+          <span className="inline-flex items-center rounded-full bg-amber-500/15 px-3 py-1 text-sm font-medium text-amber-600 dark:text-amber-400">
+            Coming soon
+          </span>
+        )}
+      </div>
       {group.nameZh && (
         <p className="mt-1 text-lg text-muted-foreground">{group.nameZh}</p>
       )}
@@ -34,10 +41,10 @@ export function OurGroups() {
       <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
         <ScrollReveal>
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
-            Our groups
+            {SECTIONS.groups.eyebrow}
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-foreground md:text-4xl">
-            Two dance groups, meeting every week
+            {SECTIONS.groups.heading}
           </h2>
         </ScrollReveal>
 

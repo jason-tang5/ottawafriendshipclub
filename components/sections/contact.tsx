@@ -1,7 +1,8 @@
-import { ORG, GROUP_CHAT } from "@/lib/content";
+import { ORG, GROUP_CHAT, SECTIONS } from "@/lib/content";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, QrCode } from "lucide-react";
+import { QrLightbox } from "@/components/ui/qr-lightbox";
+import { Mail, MapPin, QrCode } from "lucide-react";
 
 export function Contact() {
   return (
@@ -10,15 +11,13 @@ export function Contact() {
         {/* Header */}
         <ScrollReveal>
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
-            Contact
+            {SECTIONS.contact.eyebrow}
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-foreground md:text-4xl">
-            Come join us
+            {SECTIONS.contact.heading}
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-            Whether you&rsquo;re looking for new friends or a welcoming community,
-            we&rsquo;d love to hear from you — everyone at {ORG.name} is here to
-            make you feel at home.
+            {SECTIONS.contact.intro}
           </p>
         </ScrollReveal>
 
@@ -42,10 +41,9 @@ export function Contact() {
               {/* QR code side */}
               <div className="mt-8 flex shrink-0 justify-center md:mt-0">
                 {GROUP_CHAT.qrImage ? (
-                  <img
+                  <QrLightbox
                     src={GROUP_CHAT.qrImage}
                     alt="WeChat group QR code"
-                    className="size-44 rounded-xl border border-border bg-card object-contain"
                   />
                 ) : (
                   <div className="flex size-44 flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-primary/40 bg-card text-center text-sm text-muted-foreground">
@@ -69,15 +67,6 @@ export function Contact() {
             >
               <Mail className="size-4" />
               {ORG.email}
-            </Button>
-
-            <Button
-              variant="outline"
-              render={<a href={`tel:${ORG.phone.replace(/[^+\d]/g, "")}`} />}
-              nativeButton={false}
-            >
-              <Phone className="size-4" />
-              {ORG.phone}
             </Button>
 
             <span className="inline-flex items-center gap-1.5 text-base text-muted-foreground">
