@@ -1,7 +1,8 @@
 {
   "items": [
     {
-      "name": "Grandparents Dance Group",
+      "name": "Middle-aged and Senior Song and Dance Troupe",
+      "nameZh": "中老年歌舞队",
       "schedule": "Meets weekly",
       "status": "active",
       "body": "A welcoming dance group that gets together every week to move, laugh, and stay active."
@@ -15,12 +16,14 @@
     },
     {
       "name": "Aerobics Group",
+      "nameZh": "健身操队",
       "schedule": "Weekly (coming soon)",
       "status": "forthcoming",
       "body": "A fun, music-based fitness class combining cardio, stretching, and strength exercises to improve heart health, flexibility, and overall fitness."
     },
     {
       "name": "Mahjong Group",
+      "nameZh": "麻将队",
       "schedule": "Almost daily (coming soon)",
       "status": "forthcoming",
       "body": "A friendly Mahjong group for older seniors to enjoy recreation, social interaction, and companionship almost daily in a welcoming environment."
