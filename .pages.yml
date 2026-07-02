@@ -6,9 +6,12 @@
 # triggers the GitHub Pages deploy workflow and rebuilds the live site.
 
 # Where uploaded images are stored in the repo, and the URL they map to on the site.
+# NOTE: input must be a subfolder of public (NOT public itself) and output must
+# strip the "public" prefix, or image uploads fail on Next.js. See
+# https://pagescms.org/docs/configuration/media/
 media:
-  input: public
-  output: /
+  input: public/photos
+  output: /photos
   extensions: [png, jpg, jpeg, webp, gif, svg]
 
 content:
@@ -142,7 +145,16 @@ content:
         type: object
         fields:
           - { name: heroImage, label: Background photo, type: image }
+          - { name: eyebrow, label: Small line above headline, type: string }
+          - { name: heading, label: Headline (before the rotating word), type: string }
           - { name: rotatingWords, label: Rotating words, type: string, list: true }
+          - { name: primaryButton, label: Main button text, type: string }
+          - { name: secondaryButton, label: Second button text, type: string }
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - { name: tagline, label: Footer tagline, type: text }
       - name: groupChat
         label: WeChat panel
         type: object
@@ -174,6 +186,8 @@ content:
             fields:
               - { name: eyebrow, label: Small label, type: string }
               - { name: heading, label: Heading, type: string }
+              - { name: upcomingLabel, label: "Upcoming subheading", type: string }
+              - { name: pastLabel, label: "Past events subheading", type: string }
           - name: gallery
             label: "Gallery"
             type: object

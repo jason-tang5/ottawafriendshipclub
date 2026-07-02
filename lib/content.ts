@@ -28,13 +28,21 @@ export const HERO = settings.hero;
 // --- WeChat group chat panel ----------------------------------------------
 export const GROUP_CHAT = settings.groupChat;
 
+// --- Footer ---------------------------------------------------------------
+export const FOOTER = settings.footer;
+
 // --- Programs ("What we do") ----------------------------------------------
 export type Program = {
   title: string;
   body: string;
   icon: string; // lucide-react icon name: GraduationCap | PiggyBank | ShieldCheck | Smartphone | Sprout | Music
 };
-export const PROGRAMS: Program[] = programsData.items;
+// Note: the `.filter(...)` calls below drop any incomplete entries an editor
+// may create in Pages CMS (e.g. clicking "Add" without filling the fields), so
+// a half-finished item can never break the site build.
+export const PROGRAMS: Program[] = (programsData.items as unknown as Program[]).filter(
+  (p) => p && p.title,
+);
 
 // --- Groups ("Our groups") ------------------------------------------------
 export type Group = {
@@ -45,7 +53,9 @@ export type Group = {
   body: string;
   status: "active" | "forthcoming";
 };
-export const GROUPS: Group[] = groupsData.items as Group[];
+export const GROUPS: Group[] = (groupsData.items as unknown as Group[]).filter(
+  (g) => g && g.name,
+);
 
 // --- Events ---------------------------------------------------------------
 export type EventItem = {
@@ -59,14 +69,18 @@ export type EventItem = {
   speakers?: string[];
   capacity?: string;
 };
-export const EVENTS: EventItem[] = eventsData.items as EventItem[];
+export const EVENTS: EventItem[] = (eventsData.items as unknown as EventItem[]).filter(
+  (e) => e && e.title,
+);
 
 // --- Gallery --------------------------------------------------------------
 export type GalleryPhoto = {
   src: string;
   caption: string;
 };
-export const GALLERY: GalleryPhoto[] = galleryData.items;
+export const GALLERY: GalleryPhoto[] = (galleryData.items as unknown as GalleryPhoto[]).filter(
+  (p) => p && p.src,
+);
 
 // --- Resources ------------------------------------------------------------
 export type ResourceLink = {
@@ -74,4 +88,6 @@ export type ResourceLink = {
   url: string;
   description: string;
 };
-export const RESOURCES: ResourceLink[] = resourcesData.items;
+export const RESOURCES: ResourceLink[] = (resourcesData.items as unknown as ResourceLink[]).filter(
+  (r) => r && r.label,
+);

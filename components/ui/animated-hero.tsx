@@ -30,11 +30,11 @@ export function AnimatedHero() {
 
       <div className="mx-auto flex min-h-[78vh] max-w-5xl flex-col justify-center px-6 py-24 md:min-h-[82vh]">
         <p className="text-base font-semibold text-white/90">
-          A volunteer-run non-profit in {ORG.city}
+          {HERO.eyebrow}
         </p>
 
         <h1 className="mt-4 font-heading text-4xl font-semibold leading-[1.1] text-white md:text-6xl">
-          A community for seniors that&rsquo;s
+          {HERO.heading}
           <span className="relative mt-3 flex h-[1.3em] w-full items-center overflow-hidden">
             {words.map((word, i) => (
               <motion.span
@@ -60,7 +60,7 @@ export function AnimatedHero() {
 
         <div className="mt-8 flex flex-wrap gap-4">
           <Button size="lg" render={<a href="#contact" />} nativeButton={false}>
-            Get in touch
+            {HERO.primaryButton}
           </Button>
           <Button
             size="lg"
@@ -69,7 +69,7 @@ export function AnimatedHero() {
             render={<a href="#programs" />}
             nativeButton={false}
           >
-            See what we do
+            {HERO.secondaryButton}
           </Button>
         </div>
       </div>

@@ -20,19 +20,20 @@
   },
   "hero": {
     "heroImage": "/photos/club-dance-wide.jpg",
-    "rotatingWords": [
-      "welcoming",
-      "active",
-      "connected",
-      "learning",
-      "joyful"
-    ]
+    "eyebrow": "A volunteer-run non-profit in Ottawa, Ontario",
+    "heading": "A community for seniors that's",
+    "rotatingWords": ["welcoming", "active", "connected", "learning", "joyful"],
+    "primaryButton": "Get in touch",
+    "secondaryButton": "See what we do"
+  },
+  "footer": {
+    "tagline": "A volunteer-run non-profit for seniors 55+ in Ottawa, Ontario."
   },
   "groupChat": {
     "platform": "WeChat",
     "label": "Join our WeChat group",
     "note": "Scan the QR code with WeChat to join our members' group chat.",
-    "qrImage": "/wechat-qr.png"
+    "qrImage": "/photos/wechat-qr.png"
   },
   "sections": {
     "programs": {
@@ -46,7 +47,9 @@
     },
     "events": {
       "eyebrow": "Events",
-      "heading": "What's coming up"
+      "heading": "What's coming up",
+      "upcomingLabel": "Upcoming",
+      "pastLabel": "Past events"
     },
     "gallery": {
       "eyebrow": "Gallery",

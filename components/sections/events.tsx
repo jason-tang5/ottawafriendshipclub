@@ -82,7 +82,7 @@ export function Events() {
           <ScrollReveal delay={0.1}>
             <div className="mt-12">
               <h3 className="text-xl font-semibold text-foreground">
-                Upcoming
+                {SECTIONS.events.upcomingLabel}
               </h3>
               <div className="mt-6 grid gap-6 sm:grid-cols-2">
                 {upcoming.map((event) => (
@@ -98,7 +98,7 @@ export function Events() {
           <ScrollReveal delay={0.2}>
             <div className="mt-14">
               <h3 className="text-xl font-semibold text-foreground">
-                Past events
+                {SECTIONS.events.pastLabel}
               </h3>
               <div className="mt-6 grid gap-6 sm:grid-cols-2">
                 {past.map((event) => (

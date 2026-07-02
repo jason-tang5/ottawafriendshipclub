@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
-import { ORG, ABOUT } from "@/lib/content";
+import { ORG, ABOUT, FOOTER } from "@/lib/content";
 import { Programs } from "@/components/sections/programs";
 import { OurGroups } from "@/components/sections/our-groups";
 import { Events } from "@/components/sections/events";
@@ -123,7 +123,7 @@ export default function Home() {
               </div>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">
-              A volunteer-run non-profit for seniors 55+ in {ORG.city}.
+              {FOOTER.tagline}
             </p>
           </div>
           <nav className="flex flex-col gap-2 text-sm">
