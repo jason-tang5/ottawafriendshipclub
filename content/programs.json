@@ -12,22 +12,22 @@
     },
     {
       "title": "Gardening",
-      "body": "Growing things together outdoors — good for the body, the mind, and making friends.",
+      "body": "Growing things together outdoors, good for the body, the mind, and making friends.",
       "icon": "Sprout"
     },
     {
       "title": "Digital skills",
-      "body": "Friendly, patient help with phones, computers, and the internet — at your own pace.",
+      "body": "Friendly, patient help with phones, computers, and the internet.",
       "icon": "Smartphone"
     },
     {
       "title": "Elder-abuse awareness",
-      "body": "Workshops that help seniors recognize, prevent, and report abuse and fraud.",
+      "body": "Workshops that help seniors recognize and prevent abuse and fraud.",
       "icon": "ShieldCheck"
     },
     {
       "title": "Financial information for seniors",
-      "body": "Plain-language guidance on pensions, benefits, and managing money safely.",
+      "body": "Guidance on pensions, benefits, and managing money safely.",
       "icon": "PiggyBank"
     }
   ]
