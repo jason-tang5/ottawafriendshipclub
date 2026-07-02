@@ -129,6 +129,16 @@
   }
   html {
     @apply font-sans;
+    /* Smoothly animate to in-page anchors (hero buttons, nav links). */
+    scroll-behavior: smooth;
+    /* Offset anchor targets so they land below the sticky header, not under it. */
+    scroll-padding-top: 5rem;
+  }
+  /* Honour users who prefer reduced motion — jump instantly instead. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
   h1, h2, h3 {
     font-family: var(--font-heading);
