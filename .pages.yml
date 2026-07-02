@@ -13,6 +13,9 @@ media:
   input: public/photos
   output: /photos
   extensions: [png, jpg, jpeg, webp, gif, svg]
+  # Sanitize uploaded filenames (spaces/special characters cause "Invalid path"
+  # errors otherwise — e.g. "Screenshot 2025-05-30 095148.png").
+  rename: safe
 
 content:
   # ------------------------------------------------------------------ Events
