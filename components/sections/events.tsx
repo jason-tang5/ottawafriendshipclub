@@ -3,9 +3,14 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { CalendarDays, Clock, MapPin, Users } from "lucide-react";
 
 function formatDate(dateStr: string): string {
-  if (dateStr === "") return "Date TBD";
+  if (!dateStr) return "Date TBD";
+  // Only reformat strict YYYY-MM-DD values into a nice long date. Anything else
+  // (e.g. "TBD", "June 2026") is shown exactly as the editor typed it.
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) return dateStr;
   // Append T00:00:00 to avoid timezone-shift issues when parsing YYYY-MM-DD
-  return new Date(`${dateStr}T00:00:00`).toLocaleDateString("en-CA", {
+  const parsed = new Date(`${dateStr}T00:00:00`);
+  if (Number.isNaN(parsed.getTime())) return dateStr;
+  return parsed.toLocaleDateString("en-CA", {
     year: "numeric",
     month: "long",
     day: "numeric",

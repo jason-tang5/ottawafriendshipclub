@@ -38,10 +38,8 @@ content:
             default: upcoming
           - name: date
             label: Date
-            type: date
-            description: Leave empty to show "Date TBD".
-            options:
-              format: yyyy-MM-dd
+            type: string
+            description: 'Type a date like 2026-06-28, or "TBD" (or leave empty) if the date isn''t decided yet.'
           - { name: time, label: Time, type: string, description: 'e.g. "10:30 AM – 12:00 PM" or "TBD"' }
           - { name: location, label: Location, type: string }
           - { name: description, label: Short description, type: text }
