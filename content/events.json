@@ -15,12 +15,13 @@
       ]
     },
     {
-      "title": "Digital Skills Drop-In",
+      "title": "🎉 Ottawa Friendship Club First Anniversary Celebration 渥太华联谊会成立一周年庆祝活动 🎉",
       "status": "upcoming",
-      "date": "TBD",
-      "time": "TBD",
-      "location": "TBD",
-      "description": "Free for all members."
+      "date": "Sunday, July 19, 2026",
+      "time": "1:30 PM – 4:30 PM",
+      "location": "Room 203, Jack Purcell Community Centre, 320 Jack Purcell Lane, Ottawa (near downtown)",
+      "description": "The Ottawa Friendship Club warmly invites all members to join us as we celebrate the first anniversary of our establishment!\n\nOver the past year, our club has grown into a vibrant and welcoming community where members connect through friendship, culture, wellness, and lifelong learning. This special celebration is an opportunity to reflect on our journey, showcase our talented members, and enjoy an afternoon of music, dance, and fellowship.",
+      "longDescription": "Event Highlights: \n\n* Welcome \n* A brief presentation by the Club leadership on the history and development of the Ottawa Friendship Club\n* Performances by all club teams, with each group presenting two or three of their best singing and dance performances\n* Social dancing and peer interaction\n\n* Refreshments will be provided\n\n🚗 Free parking available\n\nWe look forward to celebrating this special milestone with you!"
     },
     {
       "title": "Health & Self-Care Workshop for Seniors",
@@ -53,6 +54,13 @@
       "time": "May 29, 2026, 2:00–3:00 PM and May 31, 2026, 6:15–8:30 PM",
       "location": "Chinatown, Ottawa",
       "description": "For this year's Chinatown Night Market, the Ottawa Friendship Club's Senior Song and Dance Troupe and Ballroom and Latin Dance Team were invited to perform, presenting a vibrant artistic showcase to audiences from diverse cultural backgrounds."
+    },
+    {
+      "title": "Digital Skills Drop-In",
+      "status": "upcoming",
+      "date": "TBD",
+      "time": "TBD",
+      "location": "TBD"
     }
   ]
 }
