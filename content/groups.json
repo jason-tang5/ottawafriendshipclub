@@ -15,8 +15,7 @@
       "body": "Our ballroom and Latin (cha-cha-cha) dance group with volunteer instructors that practises every week."
     },
     {
-      "name": "Aerobics Group",
-      "nameZh": "健身操队",
+      "name": "TBD",
       "schedule": "Weekly (coming soon)",
       "status": "forthcoming",
       "body": "A music-based fitness class combining cardio, stretching, and strength exercises to improve heart health and overall fitness."
@@ -25,6 +24,7 @@
       "name": "Mahjong Group",
       "nameZh": "麻将队",
       "schedule": "Hours: 6:00 p.m. – 9:00 p.m., Tuesday through Sunday",
+      "status": "active",
       "body": "A friendly Mahjong group for older seniors to enjoy recreation, social interaction, and companionship almost daily in a welcoming environment."
     }
   ]
