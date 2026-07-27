@@ -3,27 +3,30 @@
     {
       "name": "Middle-aged and Senior Song and Dance Troupe",
       "nameZh": "中老年歌舞队",
-      "schedule": "Meets weekly",
+      "schedule": "Weekly, year-round in downtown Ottawa",
       "status": "active",
       "body": "A welcoming song and dance group that gets together every week to move, laugh, and stay active."
     },
     {
       "name": "Ballroom & Latin Dance Group",
       "nameZh": "国标队",
-      "schedule": "Meets weekly",
+      "schedule": "Weekly, year-round in Barrhaven",
       "status": "active",
       "body": "Our ballroom and Latin (cha-cha-cha) dance group with volunteer instructors that practises every week."
     },
     {
       "name": "Mahjong Group",
       "nameZh": "麻将队",
-      "schedule": "Hours: 6:00 p.m. – 9:00 p.m., Tuesday through Sunday",
+      "schedule": "Hours: 6:00 p.m. – 9:00 p.m., Tuesday through Sunday, in downtown Ottawa",
       "status": "active",
       "body": "A friendly Mahjong group for older seniors to enjoy recreation, social interaction, and companionship almost daily in a welcoming environment."
     },
     {
-      "name": "TBD",
-      "status": "forthcoming"
+      "name": "Chinese Folk Dance Group",
+      "nameZh": "中国民族舞蹈队",
+      "schedule": "Weekly, September-June, in Kanata",
+      "status": "forthcoming",
+      "body": "The group practices and performs traditional Chinese folk dances that reflect the country's diverse cultural heritage. Members enjoy physical activity, artistic expression, and friendship while sharing the beauty of Chinese culture through community performances and special events."
     }
   ]
 }
