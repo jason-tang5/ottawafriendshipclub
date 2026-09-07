@@ -164,6 +164,15 @@ content:
           - { name: label, label: Heading, type: string }
           - { name: note, label: Note, type: text }
           - { name: qrImage, label: QR code image, type: image }
+      - name: facebook
+        label: Facebook panel
+        type: object
+        fields:
+          - { name: platform, label: Platform, type: string }
+          - { name: label, label: Heading, type: string }
+          - { name: note, label: Note, type: text }
+          - { name: linkLabel, label: Link text, type: string }
+          - { name: url, label: Facebook URL, type: string }
       - name: sections
         label: Section headings
         type: object

@@ -1,8 +1,8 @@
-import { ORG, GROUP_CHAT, SECTIONS } from "@/lib/content";
+import { ORG, GROUP_CHAT, FACEBOOK, SECTIONS } from "@/lib/content";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { Button } from "@/components/ui/button";
 import { QrLightbox } from "@/components/ui/qr-lightbox";
-import { Mail, MapPin, QrCode } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, QrCode } from "lucide-react";
 
 export function Contact() {
   return (
@@ -57,8 +57,37 @@ export function Contact() {
           </div>
         </ScrollReveal>
 
-        {/* Contact details */}
+        {/* Facebook panel */}
         <ScrollReveal delay={0.2}>
+          <a
+            href={FACEBOOK.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-6 block rounded-3xl border border-primary/25 bg-primary/5 p-8 transition-colors hover:border-primary/50 hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary md:p-12"
+          >
+            <div className="md:flex md:items-center md:gap-8">
+              <div className="flex-1">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                  {FACEBOOK.platform}
+                </span>
+                <h3 className="mt-4 text-2xl font-semibold text-foreground">
+                  {FACEBOOK.label}
+                </h3>
+                <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
+                  {FACEBOOK.note}
+                </p>
+              </div>
+              <span className="mt-8 inline-flex shrink-0 items-center gap-2 font-semibold text-primary group-hover:underline md:mt-0">
+                {FACEBOOK.linkLabel}
+                <ArrowUpRight className="size-5" aria-hidden="true" />
+                <span className="sr-only">(opens in a new tab)</span>
+              </span>
+            </div>
+          </a>
+        </ScrollReveal>
+
+        {/* Contact details */}
+        <ScrollReveal delay={0.3}>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Button
               variant="outline"

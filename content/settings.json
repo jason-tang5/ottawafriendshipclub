@@ -41,6 +41,13 @@
     "note": "Scan the QR code with WeChat to join our members' group chat.",
     "qrImage": "/photos/wechat-qr.png"
   },
+  "facebook": {
+    "platform": "Facebook",
+    "label": "Connect with us on Facebook",
+    "note": "Visit the Ottawa Friendship Club Facebook page to stay connected with our community.",
+    "linkLabel": "Visit our Facebook page",
+    "url": "https://www.facebook.com/profile.php?id=61593712667335&sk=abou"
+  },
   "sections": {
     "programs": {
       "eyebrow": "What we do",
@@ -70,7 +77,7 @@
     "contact": {
       "eyebrow": "Contact",
       "heading": "Come join us",
-      "intro": "Our programs are open to the general public. New members are always welcome. Please contact us by email, Facebook (https://www.facebook.com/profile.php?id=61593712667335&sk=about), or WeChat."
+      "intro": "Our programs are open to the general public. New members are always welcome. Please contact us by email, Facebook, or WeChat."
     }
   }
 }

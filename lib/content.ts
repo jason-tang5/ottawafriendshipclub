@@ -28,6 +28,9 @@ export const HERO = settings.hero;
 // --- WeChat group chat panel ----------------------------------------------
 export const GROUP_CHAT = settings.groupChat;
 
+// --- Facebook panel ------------------------------------------------------
+export const FACEBOOK = settings.facebook;
+
 // --- Footer ---------------------------------------------------------------
 export const FOOTER = settings.footer;
 
